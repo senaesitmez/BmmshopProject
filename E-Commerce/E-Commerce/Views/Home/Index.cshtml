@@ -1,0 +1,194 @@
+﻿@using E_Commerce.Entity;
+@model IEnumerable<Product>
+@{
+    ViewBag.Title = "Index";
+}
+<div id="slider">
+    <div class="container">
+
+        <figure>
+
+            <img src="~/theme/img/IMG-20221221-WA0001.jpg">
+
+            <img src="~/theme/img/IMG-20221221-WA0002.jpg">
+
+            <img src="/theme/img/IMG-20221221-WA0001.jpg">
+
+            <img src="/theme/img/IMG-20221221-WA0002.jpg">
+
+            <img src="~/theme/img/IMG-20221221-WA0001.jpg">
+
+
+
+
+        </figure>
+
+    </div>
+</div>
+<h2>Electronic</h2>
+<div class="row mt-3">
+    @foreach (var urun in Model)
+    {
+        if (urun.CategoryID == 1)
+        {
+        <div class="col-md-3">
+            <a href="/Home/Details/@urun.ID">
+                <div class="card inline-block">
+                    <img class="card-img-top" src=@urun.PictureURL alt="@urun.ProductName">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            @urun.ProductName
+                        </h4>
+                        <p class="card-text">
+                            @urun.ProductDescription
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <h4>$@urun.UnitPrice</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+        }
+    }
+
+</div>
+<h2>Fashion</h2>
+<div class="row mt-3">
+    @foreach (var urun in Model)
+    {
+    if (urun.CategoryID == 2) { 
+        <div class="col-md-3">
+            <a href="/Home/Details/@urun.ID">
+                <div class="card inline-block">
+                    <img class="card-img-top" src=@urun.PictureURL alt="@urun.ProductName">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            @urun.ProductName
+                        </h4>
+                        <p class="card-text">
+                            @urun.ProductDescription
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <h4>$@urun.UnitPrice</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+        }
+    }
+
+</div>
+<h2>Home,Life</h2>
+<div class="row mt-3">
+    @foreach (var urun in Model)
+    {
+    if (urun.CategoryID == 3) { 
+        <div class="col-md-3">
+            <a href="/Home/Details/@urun.ID">
+                <div class="card inline-block">
+                    <img class="card-img-top" src=@urun.PictureURL alt="@urun.ProductName">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            @urun.ProductName
+                        </h4>
+                        <p class="card-text">
+                            @urun.ProductDescription
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <h4>$@urun.UnitPrice</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+        }
+    }
+
+</div>
+<h2>Sport,Outdoor</h2>
+<div class="row mt-3">
+    @foreach (var urun in Model)
+    {
+    if (urun.CategoryID == 4) { 
+        <div class="col-md-3">
+            <a href="/Home/Details/@urun.ID">
+                <div class="card inline-block">
+                    <img class="card-img-top" src=@urun.PictureURL alt="@urun.ProductName">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            @urun.ProductName
+                        </h4>
+                        <p class="card-text">
+                            @urun.ProductDescription
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <h4>$@urun.UnitPrice</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+        }
+    }
+
+</div>
+<h2>Cosmetics,Personal Care</h2>
+<div class="row mt-3">
+    @foreach (var urun in Model)
+    {
+    if (urun.CategoryID == 5) { 
+        <div class="col-md-3">
+            <a href="/Home/Details/@urun.ID">
+                <div class="card inline-block">
+                    <img class="card-img-top" src=@urun.PictureURL alt="@urun.ProductName">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            @urun.ProductName
+                        </h4>
+                        <p class="card-text">
+                            @urun.ProductDescription
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <h4>$@urun.UnitPrice</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+        }
+    }
+
+</div>
+<h2>Book,Musics,Movie</h2>
+<div class="row mt-3">
+    @foreach (var urun in Model)
+    {
+    if (urun.CategoryID == 6) { 
+        <div class="col-md-3">
+            <a href="/Home/Details/@urun.ID">
+                <div class="card inline-block">
+                    <img class="card-img-top" src=@urun.PictureURL alt="@urun.ProductName">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            @urun.ProductName
+                        </h4>
+                        <p class="card-text">
+                            @urun.ProductDescription
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <h4>$@urun.UnitPrice</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+        }
+    }
+
+</div>
+
+
+
+
